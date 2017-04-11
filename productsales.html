@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html lang="eng">
+
+<head>
+    <meta name="author" content="Nicole Ang">
+    <meta name="keywords" content="Prantl's Bakery">
+    <meta name="description" content="Prantl's Bakery's Website">
+
+    <title>Product Sales</title>
+
+    <link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Roboto:300,400,500" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js" ></script>
+    <script type="text/javascript" src="js/scripts.js" ></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $('#chart').highcharts({
+                chart: {
+                    plotBackgroundColor: null,
+                    plotBorderWidth: null,
+                    plotShadow: false,
+                    type: 'pie'
+                },
+                title: {
+                    text: 'Percentage of Sales for Top Selling Products (March 2017)'
+                },
+                tooltip: {
+                    pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+                },
+                plotOptions: {
+                    pie: {
+                        allowPointSelect: true,
+                        cursor: 'pointer',
+                        dataLabels: {
+                            enabled: true,
+                            format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                            style: {
+                                color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                            }
+                        }
+                    }
+                },
+            
+                series: [{
+                    name: "Products",
+                    colorByPoint: true,
+                    data: [{
+                        name: 'Burnt Almond Torte',
+                        y: 56.33
+                    }, {
+                        name: 'Donuts',
+                        y: 24.03
+                    }, {
+                        name: 'Apple Fritters',
+                        y: 20
+                    }, {
+                        name: 'Croissants',
+                        y: 18.6
+                    }, {
+                        name: 'Cupcakes',
+                        y: 17.7
+                    }, {
+                        name: 'Decorated Cookies',
+                        y: 10.5
+                    }]
+                }]
+            });
+        });
+    </script>
+</head>
+
+<!-- END HEAD -->
+<!-- BEGIN BODY -->
+
+<body>
+
+    <div id="navigation-bar">
+        <a href="index.html"><img src="images/prantls-logo.png" height="50" id="logo"></a>
+       <ul>
+           <li><a href="about.html">About Us</a></li>
+           <li><a href="storeinfo.html">Store Information</a></li>
+           <li><a href="occasions.html">Occasions</a></li>
+           <li><a href="contact.html">Contact Us</a></li>
+           <li><a class="selected" href="productsales.html">Product Sales</a></li>
+        </ul>
+    </div> <!-- Close navigation-bar div -->
+
+    <div id="productsales-container">
+        <h1>Product Sales</h1>
+        <h2>For internal use only</h2>
+
+        <!-- Description of page -->
+        <p>This page is meant to be used for Prantl's Bakery employees only.</p>
+
+        <hr />
+
+        <!-- Top sellers numbered list -->
+        <p>Prantl's Bakery's top sellers for March 2017 (combined sales from both stores): 
+        <ol>
+            <li>Burnt Almond Torte</li>
+            <li>Donuts</li>
+            <li>Apple Fritters</li>
+            <li>Croissants</li>
+            <li>Cupcakes</li>
+            <li>Decorated Cookies</li>
+        </ol>
+        
+        <br/>
+
+        <!-- Highcharts pie chart -->
+        <div id="chart"></div>
+
+        <!-- Button for image -->
+        <a href="images/pie-chart.png" target="_blank"><div class="chart-button">Click here to view an image of the results in a new tab</div></a>
+    </div> <!-- Close productsales-container -->
+
+<!-- BEGIN FOOTER -->
+    
+    <footer>
+        <br \>
+        <div id="footer-bar"></div><br \>
+        <img src="images/prantls-logo.png" height="50" id="logo-footer"><br \>
+        <div id="footer-container">
+            Copyright &copy; 2017 Prantls Bakery<br\>
+            <p> All trademarks including 'Burnt Almond Torte' and related trade dress are reserved exclusively <br\> to Prantl's Bakery under applicable state law, federal law, and the Lanham Act.</p><br \>
+            <a target="_blank" href="https://www.facebook.com/PrantlsBakery/"><img src="images/Facebook.png" class="socialmedia"></a>
+            <a target="_blank" href="https://twitter.com/prantlsbakery"><img src="images/Twitter.png" class="socialmedia"></a>
+            <a target="_blank" href="https://www.instagram.com/prantls_bakery/"><img src="images/Instagram.png" class="socialmedia"></a>
+            
+        </div>
+    </footer>
+    <br/>
+
+</body>
+
+</html>

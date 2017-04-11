@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html lang="eng">
+
+<head>
+    <meta name="author" content="Nicole Ang">
+    <meta name="keywords" content="Prantl's Bakery">
+    <meta name="description" content="Prantl's Bakery's Website">
+
+    <title>Prantl's Bakery</title>
+
+    <link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" media="all" type="text/css" href="css/jquery-ui.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Roboto:300,400,500" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js" ></script>
+    <script type="text/javascript" src="js/scripts.js" ></script>
+    <script type="text/javascript" src="js/jquery-ui.js" ></script>
+    <script>
+        $(function() {
+            $( "#tabs-index" ).tabs({
+                event: "mouseover"
+            });
+        });
+    </script>
+</head>
+
+<!-- END HEAD -->
+<!-- BEGIN BODY -->
+
+<body>
+
+    <div id="navigation-bar">
+		<a href="index.html"><img src="images/prantls-logo.png" height="50" id="logo"></a>
+        <ul>
+		    <li><a href="about.html">About Us</a></li>
+		    <li><a href="storeinfo.html">Store Information</a></li>
+		    <li><a href="occasions.html">Occasions</a></li>
+		    <li><a href="contact.html">Contact Us</a></li>
+		    <li><a href="productsales.html">Product Sales</a></li>
+		</ul>
+    </div> <!-- Close navigation-bar div -->
+
+
+    <div id="intro-container">
+        <!-- Section 1: Intro to Burnt Almond Torte -->
+        <img src="images/burnt-almond-torte.jpg" id="burnt-almond-torte-pic">
+        <h1>Home of the Burnt Almond Torte</h1>
+        <hr/>
+
+        <!-- Section 2: Feature Section -->
+        <div id="best-cake">The Greatest Cake in America</div>
+        <div id="quote"><p>"No cake made in any of the five boroughs of New York holds a candle to Prantl’s amazing burnt almond torte. It is possibly the BEST cake America has to offer." <span id="make-weight-400">-The Huffington Post</span></p></div>
+        <a href="http://www.huffingtonpost.com/2014/04/14/prantls-torte-cake-almond_n_5133580.html" target="_blank"><div class="article-button">Read the article</div></a>
+        <hr/>
+
+        <!-- Section 3: Youtube Video -->
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/iLhlZciMfoQ?rel=0" frameborder="0" allowfullscreen id="youtube-video"></iframe>
+        <hr/>
+
+        <!-- Section 4: Pastries -->
+        <img src="images/pastries.jpg" id="pastries">
+        <div id="best-cake">Pastries</div>
+        <p>Aside from our famous burnt almond torte, we also have a variety of other tasty pastries. From cupcakes to croissants to other types of pastries, we're sure to satisfy every craving. Curabitur condimentum justo libero. Nunc pretium rutrum lacus, vitae suscipit erat condimentum ac. Suspendisse euismod leo vitae tempus consectetur. Integer tellus massa, hendrerit ac tellus ut, feugiat tristique mi. Donec dictum, urna eu dapibus dapibus, ex nisl maximus tellus, vel pharetra lacus enim eget augue. Quisque vitae venenatis ipsum. Duis a efficitur massa.<br/></p>
+        <hr/>
+
+        <!-- Section 5: Store Hours -->
+        <div id="best-cake">Store Hours</div>
+        <div id="tabs-index">
+            <ul>
+                <li><a href="#tabs-1">Shadyside</a></li>
+                <li><a href="#tabs-2">Downtown</a></li>
+            </ul>
+
+            <div id="tabs-1">
+                <h3>Shadyside</h3>
+                <p>Monday: 9am – 4pm<br/>
+                Tuesday – Saturday: 7:30am – 6pm<br/>
+                Sunday: 9am – 4pm</p>
+                <a href="storeinfo.html"><div class="button">Find more details about our stores</div></a>
+            </div>
+
+            <div id="tabs-2">
+                <h3>Downtown</h3>
+                <p>Monday – Friday: 7am – 6pm<br/>
+                Saturday: 9am – 4pm<br/>
+                Sunday: 10am – 3pm</p>
+                <a href="storeinfo.html"><div class="button">Find more details about our stores</div></a>
+            </div>
+    </div> <!-- Close tabs-index div -->
+    </div> <!-- Close intro-container -->
+    
+<!-- BEGIN FOOTER -->
+    
+    <footer>
+    	<br/><br/>
+    	<div id="footer-bar"></div><br />
+    	<img src="images/prantls-logo.png" height="50" id="logo-footer"><br \>
+    	<div id="footer-container">
+    		Copyright &copy; 2017 Prantls Bakery<br/>
+    		<p> All trademarks including 'Burnt Almond Torte' and related trade dress are reserved exclusively to Prantl's Bakery under applicable state law, federal law, and the Lanham Act.</p><br />
+            <p>Citations:</p>
+            <p>Image of Burnt Almond Torte from The Huffington Post</p>
+            <p>Youtube video from Goldbely</p>
+            <p>Image of pastries from <a href="https://search.creativecommons.org/">search.creativecommons.org</a></p>
+            <p>Social media icons from Vecteezy</p>
+            <br/><br/>
+			<a target="_blank" href="https://www.facebook.com/PrantlsBakery/"><img src="images/Facebook.png" class="socialmedia"></a>
+            <a target="_blank" href="https://twitter.com/prantlsbakery"><img src="images/Twitter.png" class="socialmedia"></a>
+            <a target="_blank" href="https://www.instagram.com/prantls_bakery/"><img src="images/Instagram.png" class="socialmedia"></a>
+		</div> <!-- Close footer-container -->
+    </footer>
+    <br/>
+
+</body>
+
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+
+<html lang="eng">
+
+<head>
+    <meta name="author" content="Nicole Ang">
+    <meta name="keywords" content="Prantl's Bakery">
+    <meta name="description" content="Prantl's Bakery's Website">
+
+    <title>Store Information</title>
+
+    <link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" media="all" type="text/css" href="css/jquery-ui.css" />
+    <link rel="stylesheet" media="all" type="text/css" href="css/jquery.lightbox.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Roboto:300,400,500" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js" ></script>
+    <script type="text/javascript" src="js/scripts.js" ></script>
+    <script type="text/javascript" src="js/jquery-ui.js" ></script>
+    <script type="text/javascript" src="js/jquery.lightbox.min.js" ></script>
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+    <script src="http://code.highcharts.com/exporting.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $('#gallery a').lightBox();
+        });
+    </script>
+    <script>
+        $(function() {
+            $( "#accordion" ).accordion();
+        });
+    </script>
+    <script type="text/javascript">
+        $(function() {
+            $('#container-graph-shadyside').highcharts({
+                title: {
+                    text: 'Popular Times for Shadyside Store'
+                },
+                xAxis: {
+                    title: {
+                        text: 'Times' 
+                    },
+                    categories: ['7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm']
+                },
+                yAxis: {
+                    title: {
+                        text: 'People (average number per day)'
+                    },
+                },
+                series: [{
+                    name: "Average number of people",
+                    showInLegend: false,
+                    data: [10, 8, 24, 5, 7, 32, 16, 18, 27, 39, 32]
+                }]
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(function() {
+            $('#container-graph-downtown').highcharts({
+                title: {
+                    text: 'Popular Times for Downtown Store'
+                },
+                xAxis: {
+                    title: {
+                        text: 'Times' 
+                    },
+                    categories: ['7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm']
+                },
+                yAxis: {
+                    title: {
+                        text: 'People (average number per day)'
+                    },
+                },
+                series: [{
+                    name: "Average number of people",
+                    showInLegend: false,
+                    data: [24, 12, 16, 8, 11, 19, 15, 18, 13, 21, 35]
+                }]
+            });
+        });
+    </script>
+</head>
+
+<!-- END HEAD -->
+<!-- BEGIN BODY -->
+
+<body>
+    <div id="navigation-bar">
+        <a href="index.html"><img src="images/prantls-logo.png" height="50" id="logo"></a>
+       <ul>
+           <li><a href="about.html">About Us</a></li>
+           <li><a class="selected" href="storeinfo.html">Store Information</a></li>
+           <li><a href="occasions.html">Occasions</a></li>
+           <li><a href="contact.html">Contact Us</a></li>
+           <li><a href="productsales.html">Product Sales</a></li>
+        </ul>
+    </div> <!-- Close navigation-bar div -->
+
+    <div id="container">
+    <div id="storeinfo-container">
+      <h1>Store Information</h1>
+        <p>We have two bakery locations in Pittsburgh, PA: our flagship store in Shadyside and a store Downtown. To learn more about our locations, please scroll down. To find information about our Downtown location, you must click the "Downtown" tab below.</p>
+        <div id="accordion">
+            <!-- SHADYSIDE -->
+            <h4>Shadyside (Flagship Store)</h4>
+            <div>
+              <h2>Shadyside</h2>
+                <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.0661854885916!2d-79.93510368541332!3d40.45167206143913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f211aed70341%3A0x10db72884d553d04!2sPrantl&#39;s+Bakery!5e0!3m2!1sen!2sus!4v1491367507295" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+                <table>
+                  <tr>
+                    <th>5525 Walnut Street<br/>
+                        Pittsburgh, PA 15232</th>
+                  </tr>
+                  <tr>
+                    <th>412-621-2092</th>
+                  </tr>
+                  <tr>
+                    <th><a href="mailto:info@prantlsbakery.com">info@prantlsbakery.com</a></th>
+                  </tr>
+                  <tr>
+                    <th>
+                    Monday: 9am – 4pm<br/>
+                    Tuesday – Saturday: 7:30am – 6pm<br/>
+                    Sunday: 9am – 4pm
+                    </th>
+                  </tr>
+                </table>
+
+                <div id="content-gallery">
+                  <p><i>Click on the thumbnails below to see more images of this location</i></p>
+                <div id="gallery">
+                  <a href="images/shadyside-store.jpg" title="Storefront of our Shadyside store">
+                  <img src="images/shadyside-store.jpg" alt="Storefront" id="shadyside-outside"/></a>
+
+                  <a href="images/shadyside-inside.png" title="Inside our Shadyside store">
+                  <img src="images/shadyside-inside.png" alt="Inside" id="shadyside-inside"></a>
+                </div>
+                <!-- Highcharts busy hours for Shadyside -->
+                <div id="container-graph-shadyside"></div>
+                </div> <!-- Close content-gallery div -->
+            </div>
+            
+            <!-- DOWNTOWN -->
+            <h4>Downtown</h4>
+            <div>
+              <h2>Downtown</h2>
+              <div class="map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.5421725387932!2d-80.00426918541372!3d40.441135562080255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f15696baf219%3A0x9e8bccef10009784!2sPrantl&#39;s+Bakery!5e0!3m2!1sen!2sus!4v1491368758226" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+              <table>
+                  <tr>
+                    <th>438 Market Street<br/>
+                        Pittsburgh, PA 15222</th>
+                  </tr>
+                  <tr>
+                    <th>412-471-6861</th>
+                  </tr>
+                  <tr>
+                    <th><a href="mailto:infoms@prantlsbakery.com">infoms@prantlsbakery.com</a></th>
+                  </tr>
+                  <tr>
+                    <th>
+                    Monday – Friday: 7am – 6pm<br/>
+                    Saturday: 9am – 4pm<br/>
+                    Sunday: 10am – 3pm
+                    </th>
+                  </tr>
+              </table>
+              <div id="content-gallery">
+            <p><i>Click on the thumbnails below to see more images of this location</i></p>
+            <div id="gallery">
+                
+                <a href="images/downtown-store.jpg" title="Storefront of our Downtown store">
+                <img src="images/downtown-store.jpg" alt="Storefront"/></a>
+
+                <a href="images/downtown-outside2.jpg" title="Alternate view of our Downtown store's storefront">
+                <img src="images/downtown-outside2.jpg" alt="Storefront"></a>
+
+            </div>
+            </div>
+            <!-- Highcharts Busy Hours for Downtown -->
+            <div id="container-graph-downtown"></div>
+          </div>
+        </div> <!-- Close accordion -->
+    </div> <!-- Close store-info-container -->
+    </div> <!-- Close container -->
+    
+    
+<!-- BEGIN FOOTER -->
+    
+    <footer>
+        <br \><br \>
+        <div id="footer-bar"></div><br \>
+        <img src="images/prantls-logo.png" height="50" id="logo-footer"><br \>
+        <div id="footer-container">
+            Copyright &copy; 2017 Prantls Bakery<br\>
+            <p> All trademarks including 'Burnt Almond Torte' and related trade dress are reserved exclusively <br\> to Prantl's Bakery under applicable state law, federal law, and the Lanham Act.</p><br \>
+            <p>Citations:</p>
+            <p>Images of store fronts and inside of store were found on Google</p>
+            <br/><br/>
+            <a target="_blank" href="https://www.facebook.com/PrantlsBakery/"><img src="images/Facebook.png" class="socialmedia"></a>
+            <a target="_blank" href="https://twitter.com/prantlsbakery"><img src="images/Twitter.png" class="socialmedia"></a>
+            <a target="_blank" href="https://www.instagram.com/prantls_bakery/"><img src="images/Instagram.png" class="socialmedia"></a>
+        </div> <!-- Close footer-container -->
+    </footer>
+    <br/>
+
+</body>
+
+</html>

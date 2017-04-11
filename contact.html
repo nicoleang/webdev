@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="eng">
+
+<head>
+    <meta name="author" content="Nicole Ang">
+    <meta name="keywords" content="Prantl's Bakery">
+    <meta name="description" content="Prantl's Bakery's Website">
+
+    <title>Contact Us</title>
+
+    <link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Roboto:300,400,500" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js" ></script>
+    <script type="text/javascript" src="js/scripts.js" ></script>
+</head>
+
+<!-- END HEAD -->
+<!-- BEGIN BODY -->
+
+<body>
+    <div id="navigation-bar">
+        <a href="index.html"><img src="images/prantls-logo.png" height="50" id="logo"></a>
+       <ul>
+           <li><a href="about.html">About Us</a></li>
+           <li><a href="storeinfo.html">Store Information</a></li>
+           <li><a href="occasions.html">Occasions</a></li>
+           <li><a class="selected" href="contact.html">Contact Us</a></li>
+           <li><a href="productsales.html">Product Sales</a></li>
+        </ul>
+    </div> 
+    <div id="container">
+    
+      <h1>Contact Us</h1>
+
+      <div id="contact-message">
+        <p>If you have any questions or concerns about our products or if you would like to inquire about how we can help you make your next event better, please use the contact form below. We will try to get back to you as quickly as we can by emailing you back with our response.</p>
+      </div>
+
+      <div id="contact-form">
+        <form action="mailto:infoneeded@prantlsbakery.com" onsubmit="return validate()">
+            <fieldset>
+                <legend>Tell us about yourself</legend>
+                <label>Name<span class="req-asterisk">*</span></label><br/>
+                <input required type="text" id="uname"><br />
+                <label>5-Digit Zip Code <i>(Optional)</i></label><br/>
+                <input type="text" id="txtZip"><br/>
+                <label>Email Address<span class="req-asterisk">*</span></label><br/>
+                <input type="email" required placeholder="abc@defg.com"><br/>
+            </fieldset>
+
+            <fieldset>
+                <legend>Inquiry</legend>
+                    <label>Message<span class="req-asterisk">*</span></label><br/>
+                    <textarea rows="10" cols="50" required></textarea><br/>
+            </fieldset>
+
+            <fieldset>
+                <legend>Let's stay in touch</legend>
+                    <label>How Did You Find Out About Us?</label><br/>
+                    <select name="method">
+                        <option value="Google">Google</option>
+                        <option value="Yelp">Yelp</option>
+                        <option value="News article">News article</option>
+                        <option value="Television">Television</option>
+                        <option value="Friend">Friend</option>
+                        <option value="Other">Other</option>
+                    </select><br/><br/>
+                    <input type="checkbox" id="check" value="Yes"><span id="smaller-text">I would like to subscribe to the Prantl's Bakery mailing list!</span><br/>
+            </fieldset>
+            <p><span class="req-asterisk">*</span> <span id="smaller-text">indicates required fields</span></p>
+
+            <input type="submit" value="Submit" class="bigger-button" alt="Submit">
+            
+
+        </form>
+      </div>
+
+    </div>
+    
+<!-- BEGIN FOOTER -->
+    
+    <footer>
+        <br \><br \>
+        <div id="footer-bar"></div><br \>
+        <img src="images/prantls-logo.png" height="50" id="logo-footer"><br \>
+        <div id="footer-container">
+            Copyright &copy; 2017 Prantls Bakery<br\>
+            <p> All trademarks including 'Burnt Almond Torte' and related trade dress are reserved exclusively <br\> to Prantl's Bakery under applicable state law, federal law, and the Lanham Act.</p><br \>
+            <a target="_blank" href="https://www.facebook.com/PrantlsBakery/"><img src="images/Facebook.png" class="socialmedia"></a>
+            <a target="_blank" href="https://twitter.com/prantlsbakery"><img src="images/Twitter.png" class="socialmedia"></a>
+            <a target="_blank" href="https://www.instagram.com/prantls_bakery/"><img src="images/Instagram.png" class="socialmedia"></a>
+        </div>
+    </footer>
+    <br/>
+
+</body>
+
+</html>
