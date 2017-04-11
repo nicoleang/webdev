@@ -1,0 +1,493 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 100%;
+    line-height: 1.7em;
+    color: #000000;
+	margin: 0;
+	padding: 0;
+}
+
+hr {
+	border: solid 0.5px #d5d5d5;
+}
+
+#container h1 {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 400;
+	padding-top: 90px;
+}
+
+#productsales-container h1 {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 400;
+	padding-top: 90px;
+}
+
+footer {
+	font-family: "Roboto", sans-serif;
+}
+
+#footer-container {
+	font-size: 50%;
+	line-height: 1em; 
+	text-align: center;
+}
+
+#logo-footer {
+	display: block;
+	margin: 0 auto;
+}
+
+#footer-bar {
+	border-top: solid #00a665 3px;
+}
+
+#logo {
+	float: left; 
+	padding: 7px 20px;
+}
+
+#navigation-bar {
+	border-top: solid #00a665 3px;
+	border-bottom: solid #E5E5E5 1px; 
+	box-shadow: 0px 0px 3px #AAAAAA;
+	font-weight: 300;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 59px;
+	width: 100%;
+	opacity: 0.96;
+	z-index: 3000;
+}
+
+#navigation-bar ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #ffffff;
+}
+
+#navigation-bar li {
+	float: left;
+}
+
+#navigation-bar li a {
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 15.5px;
+	text-decoration: none;
+}
+#navigation-bar li a.selected {
+	border-bottom: solid 2px #00a665;
+}
+
+#navigation-bar li a:hover.selected {
+	background-color: #e5e5e5;
+	border-bottom: solid 2px #00a665;
+}
+#navigation-bar li a:hover {
+	background-color: #e5e5e5;
+	border-bottom: solid 2px #e5e5e5;
+}
+
+#container {
+	width: 70%;
+	margin: 10px auto;
+}
+
+#productsales-container {
+	width: 70%;
+	margin: 10px auto;
+}
+
+#container h1 {
+	padding-bottom: 13px;
+}
+
+#productsales-container h2 {
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	margin-top: -15px;
+	padding-bottom: 5px;
+	color: #00a665;
+}
+
+#aboutus-container img {
+	float: left;
+	margin-right: 2em;
+}
+
+#storeinfo-container p {
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
+}
+
+#store-front {
+	width: 40%;
+	height: auto;
+}
+
+#aboutus-text {
+	margin-left: 5em;
+	padding-left: 20px;
+	font-size: .8em;
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
+}
+
+#contact-form {
+	width: 80%;
+	margin: 10px auto;
+}
+
+#contact-form fieldset {
+	border: 1px solid #00a665;
+}
+
+#contact-form legend {
+	padding: 0.2em 0.5em;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 400;
+	font-size: 90%;
+}
+
+#contact-form label {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 300;
+	font-size: 80%;
+}
+
+#contact-form input[type=text] {
+	border: 1px solid #d5d5d5;
+	border-radius: 4px;
+	padding: 10px 15px;
+	margin-bottom: 8px;
+	box-sizing: border-box;
+	transition-duration: 0.4s;
+}
+
+#contact-form input[type=email] {
+	border: 1px solid #d5d5d5;
+	border-radius: 4px;
+	padding: 10px 15px;
+	margin-bottom: 8px;
+	box-sizing: border-box;
+	transition-duration: 0.4s;
+}
+
+#contact-form input[type=text]:focus {
+	border: 1.5px solid #00a665;
+	outline: none;
+}
+
+#contact-form input[type=email]:focus {
+	border: 1.5px solid #00a665;
+	outline: none;
+}
+
+#contact-form textarea {
+	border: 1px solid #d5d5d5;
+	border-radius: 4px;
+	padding: 5px 10px;
+	width: 95%;
+}
+
+#contact-form textarea:focus {
+	border: 1.5px solid #00a665;
+	outline: none;
+}
+
+#smaller-text {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 300;
+	font-size: 80%;
+}
+
+
+.button {
+	background-color: #00a665;
+	border-radius: 6px;
+	padding: 5px 25px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	color: #ffffff;
+	transition-duration: 0.4s;
+	border: 2px solid #00a665;
+	font-weight: 300;
+	font-size: 95%;
+}
+
+.button:hover {
+	background-color: #FFFFFF;
+	border: 2px solid #00a665;
+	color: #000000;
+}
+
+.article-button {
+	background-color: #00a665;
+	border-radius: 6px;
+	padding: 3px 25px;
+	text-align: center;
+	font-weight: 300;
+	font-size: 80%;
+	text-decoration: none;
+	display: block;
+	color: #ffffff;
+	transition-duration: 0.4s;
+	border: 2px solid #00a665;
+	margin-bottom: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 10%;
+}
+
+.article-button:hover {
+	background-color: #FFFFFF;
+	border: 2px solid #00a665;
+	color: #000000;
+}
+
+.chart-button {
+	background-color: #00a665;
+	border-radius: 6px;
+	padding: 3px 25px;
+	text-align: center;
+	font-weight: 300;
+	font-size: 80%;
+	text-decoration: none;
+	display: block;
+	color: #ffffff;
+	transition-duration: 0.4s;
+	border: 2px solid #00a665;
+	margin-bottom: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.chart-button:hover {
+	background-color: #FFFFFF;
+	border: 2px solid #00a665;
+	color: #000000;
+}
+
+.bigger-button {
+	background-color: #00a665;
+	border-radius: 6px;
+	padding: 15px 35px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	color: #ffffff;
+	transition-duration: 0.4s;
+	border: 2px solid #00a665;
+}
+
+.bigger-button:hover {
+	background-color: #FFFFFF;
+	border: 2px solid #00a665;
+	color: #000000;
+}
+
+.req-asterisk {
+	color: red;
+}
+
+.socialmedia {
+	width: 30px;
+	height: auto;
+}
+
+.socialmedia2 {
+	width: 50px;
+	height: auto;
+}
+
+#weddings-tab {
+	float: right;
+	margin-left: 2em;
+	width: 40%;
+	height: auto;
+}
+
+#celebrations-tab {
+	float: right;
+	margin-left: 2em;
+	width: 40%;
+	height: auto;
+}
+
+#holidays-tab img {
+	float: right;
+	margin-left: 2em;
+	width: 25%;
+	height: auto;
+}
+
+#occasions-message p {
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
+}
+
+#contact-message p {
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
+	padding-bottom: 13px;
+}
+
+#gallery img {
+	height: 150px;
+	width: auto;
+}
+
+#content-gallery p {
+	font-size: 75%;
+	margin-top: 10px;
+}
+
+table {
+    width: 300px;
+    border: none;
+    border-collapse: collapse;
+    border-spacing: 3px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+th {
+    height: 40px;
+ 	font-family: "Roboto", sans-serif;
+ 	font-weight: 300;
+    padding: 2px;
+    border: none;
+    text-align: left;
+}
+
+.map {
+	float: right;
+}
+
+#container-graph-shadyside {
+	margin-top: 20px;
+}
+
+#container-graph-downtown {
+	margin-top: 20px;
+	width: 60%;
+}
+
+#burnt-almond-torte-pic {
+	width: 42%;
+	height: auto;
+	padding-top: 90px;
+}
+
+#pastries {
+	width: 35%;
+	height: auto;
+	padding-top: 20px;
+}
+
+#intro-container {
+	width: 70%;
+	margin: 10px auto;
+}
+
+#intro-container img {
+	float: right;
+	margin-left: 2em;
+}
+
+#intro-container h1 {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 300;
+	font-size: 72px;
+	line-height: 1em;
+	padding-top: 90px;
+	margin-right: 20px;
+}
+
+#intro-container p {
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
+	padding: 15px 0;
+}
+
+#intro-container a {
+	text-decoration: none;
+}
+
+#quote {
+	width: 70%;
+	margin: 0 auto;
+}
+
+#quote p {
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
+	font-size: 90%;
+	text-align: center;
+	padding-bottom: 6px;
+}
+
+#make-weight-400 {
+	font-weight: 400;
+}
+
+#best-cake {
+	font-family: "Open Sans", sans-serif;
+	padding-top: 15px;
+	font-weight: 400;
+	font-size: 24px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+#intro-container iframe {
+	width: 100%;
+	margin: auto;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+#tabs-index {
+	width: 70%;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#productsales-container p {
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
+}
+
+#productsales-container li {
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
+}
+
+#productsales-container a {
+	text-decoration: none;
+}
+
+#chart {
+	width: 70%;
+	margin: 0 auto;
+}
+
+#social-media-about {
+	width: 100%;
+	text-align: center;
+}
+
+.sm {
+	display: inline-block;
+	padding: 5px;
+}
+
+
